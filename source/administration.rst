@@ -22,4 +22,5 @@ This section will guide you through the most common administrative tasks associa
    administration/nagios
    administration/upgrading
    administration/ad_ldap
+   administration/access
 

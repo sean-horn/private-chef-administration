@@ -1890,6 +1890,8 @@ nagios['admin_pager']
 .. index::
   triple: configuration; nagios; admin_password
 
+.. _configuration-nagios-auth:
+
 nagios['admin_password']
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
