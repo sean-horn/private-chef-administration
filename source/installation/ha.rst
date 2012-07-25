@@ -268,7 +268,7 @@ balanced VIP.
 Completed private-chef.rb example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A completed private-chef.rb configuration file for a four server tiered
+A completed private-chef.rb configuration file for a five server HA
 private chef cluster, consisting of:
 
 ================ =========== ================== ====
@@ -291,7 +291,7 @@ Looks like this:
 
   topology "ha"
 
-  server "be1.example.com"
+  server "be1.example.com",
    :ipaddress => "192.168.4.1",
    :role => "backend",
    :bootstrap => true,
@@ -654,7 +654,7 @@ installation. When it is complete, you will see:
 Success!
 --------
 
-Congratulations, you have installed Private Chef in a tiered
+Congratulations, you have installed Private Chef in an HA
 configuration. You should now continue with the :doc:`User Management </administration/user_management>` section
 of this guide.
 
