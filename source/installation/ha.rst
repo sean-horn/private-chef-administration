@@ -354,7 +354,9 @@ Install the Private Chef package on both of the back-end servers.
 Install DRBD on both of the back-end servers
 --------------------------------------------
 
-Both of the back-end servers must have DRBD installed.
+.. warning::
+
+  Both of the back-end servers must have DRBD metadata added to their local disks in order for failover to work properly. The directions for this step will follow for both systems.
 
 *Install DRBD on Red Hat and CentOS 6*
 
@@ -437,6 +439,10 @@ set up DRBD.
 
   $ drbdadm create-md pc0
   $ drbdadm up pc0
+
+.. warning::
+
+  drbdadm create-md pc0 must be done on both nodes of an ha backend cluster. Please confirm this step has happened on both nodes before continuing.
 
 Make the bootstrap server primary for DRBD
 ------------------------------------------
