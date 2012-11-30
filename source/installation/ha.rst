@@ -50,10 +50,8 @@ block device, to ensure that data written to disk on one back-end server
 is efficiently replicated to another. For optimal performance and
 reliability, we recommend that:
 
--  Your back-end servers have a 100M+ ethernet interface cross-connected
-   to the other, for the cluster keepalive signal.
 -  Your back-end servers have a 10G+ ethernet interface cross-connected
-   to the other, for DRBD data replication.
+   to the other, for DRBD data replication and the cluster keepalived signal.
 
 This is in addition to the standard network interfaces on your systems.
 While DRBD replication can function on systems without these additional
@@ -66,7 +64,7 @@ Back-End Virtual IP Address
 The back-end servers will share a Virtual IP Address (which we will
 refer to later as the ``back-end VIP``), which needs to be accessible
 from the front-end servers. This VIP will be created and managed by Private
-Chef but will need be added to DNS to access the cluster.
+Chef but will need to be added to DNS to access the cluster.
 
 Back-End disk configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
