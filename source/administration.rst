@@ -14,6 +14,7 @@ This section will guide you through the most common administrative tasks associa
 -  :doc:`AD/LDAP </administration/ad_ldap>`: Active Directory/LDAP Auth Configuration.
 -  :doc:`Access </administration/access>`: Alternative methods to access subsystems running in the Private Chef Backends.
 -  :doc:`Access Control </administration/access_control>`: Manage access rights with ACLs.
+-  :doc:`Ports </administration/ports>`: Full List of Ports
 -  :doc:`Configuration </administration/upgrading>`: All control attributes for /etc/opscode/private-chef.rb in one place.
 
 .. toctree::
@@ -28,5 +29,6 @@ This section will guide you through the most common administrative tasks associa
    administration/ad_ldap
    administration/access
    administration/access_control
+   administration/ports
    administration/configuration
 
